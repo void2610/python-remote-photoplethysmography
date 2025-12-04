@@ -8,3 +8,23 @@ wheels/
 
 # Virtual environments
 .venv
+
+# uv
+uv.lock
+.pytest_cache/
+
+# Data and results
+data/test_videos/
+data/results/
+*.mp4
+*.avi
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store

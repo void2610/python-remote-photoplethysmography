@@ -41,13 +41,16 @@ uv sync
 
 ```bash
 # Webカメラからリアルタイム測定
-python examples/webcam_demo.py
+uv run rppg-webcam
 
 # 動画ファイルから測定
-python examples/video_file_demo.py --input path/to/video.mp4
+uv run rppg-video --input path/to/video.mp4
 
-# アルゴリズム比較
-python examples/comparison_demo.py
+# オプション指定の例
+uv run rppg-webcam --algorithm green --buffer-size 300 --fps 30
+
+# ヘルプを表示
+uv run rppg-webcam --help
 ```
 
 ### Pythonコードでの使用例
@@ -131,10 +134,10 @@ remoteHeartRate/
 
 ```bash
 # 単体テスト実行
-pytest tests/
+uv run pytest tests/ -v
 
 # 特定のテストのみ実行
-pytest tests/test_face_detector.py
+uv run pytest tests/test_basic.py -v
 ```
 
 ## 参考文献
