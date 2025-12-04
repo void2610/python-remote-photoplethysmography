@@ -194,12 +194,8 @@ remoteHeartRate/
 #### **ステップ1: 環境セットアップ（Day 1）**
 
 ```bash
-# 仮想環境作成
-python -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-
-# 基本ライブラリインストール
-pip install opencv-python mediapipe numpy scipy matplotlib PyWavelets
+# 仮想環境作成と基本ライブラリインストール
+uv sync
 ```
 
 #### **ステップ2: 顔検出とROI抽出（Day 1-2）**

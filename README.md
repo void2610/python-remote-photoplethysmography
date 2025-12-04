@@ -31,14 +31,8 @@ Webカメラ動画から人間の皮膚の色変化を検出し、非接触で�
 # リポジトリのクローン
 cd remoteHeartRate
 
-# 仮想環境の作成（推奨）
-python -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-# または
-.venv\Scripts\activate  # Windows
-
-# 依存ライブラリのインストール
-pip install -r requirements.txt
+# 仮想環境の作成と依存ライブラリのインストール
+uv sync
 ```
 
 ## 使用方法
